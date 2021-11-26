@@ -1,1 +1,0 @@
-//Nie chce mi się pobierać gita na kompa szkolnego, także robie do przodu sobie plik i w przeglądarce zrobie upgrade'a
