@@ -1,23 +1,25 @@
-def bok(komunikat):
-    while True:
-        a = int(input(komunikat))
-        if a<=0:
-            print("Musisz podać liczbę większą od 0!")
-            continue
-        else:
-            break
-    return a
+a=-1
+while a<0:
+    a=int(input())
+print("długość boku 'a' została podana poprawnie i wynosi", a)
 
-def poprawnosc(a,b,c):
-    if a+b<c or b+c<a or c+a<b:
-        return False
-    return True
 
-a = bok("Podaj bok a: ")
-b = bok("Podaj bok b: ")
-c = bok("Podaj bok c: ")
+b=-1
+while b<0:
+    b=int(input())
+print("długość boku 'b' została podana poprawnie i wynosi", b)
 
-if poprawnosc(a,b,c)==True:
-    print("Z podanych wyżej boków można zbudować trójkąt")
+
+c=-1
+while c<0:
+    c=int(input())
+print("długość boku 'c' została podana poprawnie i wynosi", c)
+
+
+print("wprowadzone długości boków to kolejno", a,"; ", b, "; ", c)
+
+
+if a+b>c and a+c>b and c+b>a:
+    print("można z tych boków utworzyć trójkąt")
 else:
-    print("Z podanych wyżej boków nie można zbudować trójkątu")
+    print("z tych boków nie można utworzyć trójkąta")
